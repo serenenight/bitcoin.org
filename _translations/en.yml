@@ -256,6 +256,28 @@ en:
     securetext: "Thanks to a clever use of strict cryptographic rules, Bitcoin provides an amazing list of security features. Not only are bitcoins impossible to counterfeit or spoof, but the protocol is also built to be very resistant against an impressive list of attacks, including distributed denial of service."
     trust: "Solving issues with trust in banks"
     trusttext: "Bitcoin offers solutions to many of the trust problems that plague banks thanks to selective accounting transparency, signature proofs, and irreversible transactions. It also increases the risks for crooked bankers: no bitcoins can be created to save them from their own mistakes at the expense of the people."
+  protect-your-privacy:
+    title: "Protect your privacy - Bitcoin"
+    pagetitle: "Protect your privacy"
+    pagedesc: "Bitcoin is often perceived as an anonymous payment network. But in reality, Bitcoin is probably the most transparent payment network in the world. At the same time, Bitcoin can also provide acceptable levels of privacy when used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your privacy</b>."
+    traceable: "Understanding permanent traceability"
+    traceabletxt1: "Because all Bitcoin transactions are public, traceable and permanently stored in the block chain, anyone can <a href=\"http://blockchain.info\">see the balance and past transactions</a> of any Bitcoin address. By absolutely no means it is possible to hide a transaction. Consequently, privacy issues cannot be reverted but they can be prevented."
+    traceabletxt2: "Instead of storing personal informations, the block chain uses Bitcoin addresses to define where bitcoins come from and where they are sent. Because new Bitcoin addresses can be created by anybody, they are ultimately what can allow users to keep their identity private or not."
+    traceabletxt3: "That said, this privacy remains fragile as most payments require users to reveal their identity in order to receive payments or goods. As a result, most Bitcoin addresses can't remain fully anonymous and using the same Bitcoin address more than once is undermining your privacy."
+    receive: "Use new addresses to receive payments"
+    receivetxt: "To protect your privacy, you should always use a new Bitcoin address each time you receive a new payment. Doing so allows to isolate each of your transactions in such a way that it is not possible to associate them all together. People who send you money cannot see what other Bitcoin addresses you own and what you do with them. This is probably the most important advise you should keep in mind."
+    send: "Use change addresses when you send payments"
+    sendtxt: "Once you have some bitcoins, you can use a Bitcoin client like Bitcoin-Qt that makes it difficult to track your transactions by creating a new change address each time you send a payment. For example, if you receive 2 BTC on address A and that you send 1 BTC to address B, the remaining change must be sent back to you. Some Bitcoin clients choose to send the change to a new address C in such a way that it becomes much harder to know if you own Bitcoin address B or C."
+    public: "Be careful with public uses"
+    publictxt: "Unless your intention is to receive public donations or payments with full transparency, publishing a Bitcoin address on any public space such as a social network or a website is the worst possible idea when it comes to privacy. If you choose to do so, always remember that if you move any funds from this address to one of your other addresses, they will be publicly tainted by the history your public address. Additionally, you might also want to be careful not to publish informations about your transactions and purchases that could allow someone to identify your Bitcoin addresses."
+    onlinewallet: "Delegate to online wallets"
+    onlinewallettxt: "Even though existing online wallets are still not as secure to store value as banks, they can sometime offer a good compromise when it comes to privacy. Many online wallets store and mix all of their users funds together and hide their IP addresses. Most of those services need to keep a log of your activities but they are also designed to hide those informations from the public."
+    iplog: "Your IP address can be loggued"
+    iplogtxt: "Because the Bitcoin network is a peer-to-peer network, it is possible to listen transactions relays and log their source IP addresses. Considering the popularity of the Bitcoin network, it is probably safe to assume that all transactions are already monitored by many organizations. IP addresses can allow to geotag users and they can help to find their real identity. You might want to consider hiding your computer's IP address with a tool like <a href=\"https://www.torproject.org/\">Tor</a> so that it cannot be logged."
+    laundry: "Risks and limitations of laundries"
+    laundrytxt: "Some online services called laundries or mixing services offer to mix traceability between users by receiving and sending back the same amount from independant Bitcoin addresses. It is important to note that the legality of using such services might vary and be subjected to different rules in each jurisdictions. Such services also require you to trust the individuals running them not to lose or steal your funds and not to keep a log of your requests. Even though laundries can break traceability for small amounts, it becomes increasingly difficult to do the same for larger transactions."
+    future: "Future improvements"
+    futuretxt: "Various software improvements might be expected in the future to improve privacy. For instance, some efforts are ongoing with the payment request API to avoid combining multiple transactions in the future in order to prevent many input addresses to be tainted by each other during a payment. Independent work is also being done to develop extended privacy features to the Bitcoin protocol with <a href=\"http://zerocoin.org/\">zerocoin</a>. At some point, a Bitcoin client could also allow users to choose from which Bitcoin addresses they want to send a payment."
   resources:
     title: "Resources - Bitcoin"
     pagetitle: "Bitcoin resources"
@@ -382,7 +404,7 @@ en:
     irreversible: "Bitcoin payments are irreversible"
     irreversibletxt: "Any transaction you issue with Bitcoin cannot be reversed, it can only be refunded by the person receiving the funds. That means you should take care to do business with people or organizations you know and trust. But don't worry, Bitcoin can detect typos and usually won't let you send money to an invalid address."
     anonymous: "Bitcoin is not anonymous"
-    anonymoustxt: "Some effort is required in order to protect your privacy with Bitcoin. All Bitcoin transactions are stored publicly and permanently on the network, which means anyone can see the balance and transactions of any Bitcoin address. However, the identity of the owner cannot be associated with their Bitcoin address until personal information is revealed by the owner during an exchange. This is why it is recommended for Bitcoin owners to use many different Bitcoin addresses; in fact, you should create a new one each time you receive money. This is especially important for public uses such as websites. You might also want to consider hiding your computer's IP address with a tool like <a href=\"https://www.torproject.org/\">Tor</a> so that it cannot be logged."
+    anonymoustxt: "Some effort is required in order to protect your privacy with Bitcoin. All Bitcoin transactions are stored publicly and permanently on the network, which means anyone can see the balance and transactions of any Bitcoin address. However, Bitcoin addresses cannot be associated with the identity of their owner until personal information is revealed by the owner during an exchange or at a later time. This is why it is recommended to use new addresses for each payment and to adopt other good practices in order to protect your privacy. <a href=\"#protect-your-privacy#\"><b>Read more about protecting your privacy</b></a>."
     instant: "Instant transactions are less secure"
     instanttxt: "A Bitcoin transaction is usually deployed within a few seconds and confirmed within 10 minutes. During that time, a transaction can be considered authentic but still reversible. Dishonest users could try to cheat. If you can't wait for a confirmation, asking for a small transaction fee or using a detection system for unsafe transactions can increase security. For larger amounts like 1000 US$, it makes sense to wait for 6 confirmations or more. Each confirmation <i>exponentially</i> decreases the risk of a reversed transaction."
     experimental: "Bitcoin is still experimental"
@@ -431,6 +453,7 @@ en:
     getting-started: getting-started
     how-it-works: how-it-works
     innovation: innovation
+    protect-your-privacy: protect-your-privacy
     resources: resources
     secure-your-wallet: secure-your-wallet
     support-bitcoin: support-bitcoin
